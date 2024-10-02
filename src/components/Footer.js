@@ -29,14 +29,20 @@ const FooterLink = styled.a`
   }
 `;
 
-const Footer = () => {
+const Footer = ({ resumeLink, githubLink, linkedinLink }) => {
   return (
     <FooterContainer>
-        <FooterItems>
-            <FooterLink href="#resume">resume</FooterLink>
-            <FooterLink href="#github">github</FooterLink>
-            <FooterLink href="#linkedin">linkedin</FooterLink>
-        </FooterItems>
+      <FooterItems>
+        <FooterLink href={resumeLink} target="_blank" rel="noopener noreferrer">
+          resume
+        </FooterLink>
+        <FooterLink href={githubLink} target="_blank" rel="noopener noreferrer">
+          github
+        </FooterLink>
+        <FooterLink href={linkedinLink} target="_blank" rel="noopener noreferrer">
+          linkedin
+        </FooterLink>
+      </FooterItems>
     </FooterContainer>
   );
 };

@@ -50,7 +50,11 @@ function App() {
 					<ContentWrapper>
 						<AnimatedRoutes />
 					</ContentWrapper>
-					<Footer />
+					<Footer
+						resumeLink="https://your-resume-link.com"
+						githubLink="https://github.com/connortbot"
+						linkedinLink="https://www.linkedin.com/in/connor-loi/"
+					/>
 				</AppContainer>
 			</Router>
     	</>
