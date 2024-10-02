@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const HomeContainer = styled.div`
   width: 80%;
-  padding: 80px 80px;
+  padding: 150px 80px;
   max-width: 1200px;
   margin: 0 auto;
 `;
