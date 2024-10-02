@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
   body, html {
     height: 100%;
     width: 100%;
-    overflow: hidden; 
+    overflow-x: hidden;
     font-family: 'Hanken Grotesk', sans-serif; /* Global font family */
     background-color: #FAFFFB; /* Background color */
   }

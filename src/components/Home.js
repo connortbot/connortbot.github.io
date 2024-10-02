@@ -1,11 +1,14 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-const HomeContainer = styled.div`
+const HomeContainer = styled(motion.div)`
   width: 80%;
   padding: 150px 80px;
   max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden;
+  height: 80vh;
 `;
 
 const Greeting = styled.h1`
@@ -36,9 +39,29 @@ const WeakHighlight = styled.span`
   font-style: italic;
 `;
 
+const pageVariants = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: { duration: 0.5 },
+    },
+    exit: {
+      opacity: 0,
+      transition: { duration: 0.5 },
+    },
+};
+
+
 const Home = () => {
     return (
-        <HomeContainer>
+        <HomeContainer
+		initial="initial"
+		animate="animate"
+		exit="exit"
+		variants={pageVariants}
+		>
             <Greeting>hi, i'm connor {'\u{1F631}'}</Greeting>
             <Description>
                 {'\u{1F4BE}'} seeking 2025 internships at places i'll love, such as companies driven by film arts, machine learning, 

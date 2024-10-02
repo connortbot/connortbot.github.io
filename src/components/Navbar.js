@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link, useLocation } from 'react-router-dom';
 
 const Nav = styled.nav`
   display: flex;
@@ -14,7 +15,7 @@ const NavItems = styled.div`
   gap: 20px; /* Gap between the nav items */
 `;
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   margin-left: 20px;
   text-decoration: none;
   font-family: 'Hanken Grotesk', sans-serif;
@@ -31,16 +32,26 @@ const NavLink = styled.a`
 `;
 
 const Navbar = () => {
-    return (
-        <Nav>
-            <NavItems>
-                <NavLink active>home</NavLink>
-                <NavLink>projects</NavLink>
-                <NavLink>about</NavLink>
-                <NavLink>contact</NavLink>
-            </NavItems>
-        </Nav>
-    );
+  const location = useLocation();
+
+  return (
+    <Nav>
+      <NavItems>
+        <NavLink to="/" active={location.pathname === '/'}>
+          home
+        </NavLink>
+        <NavLink to="/projects" active={location.pathname === '/projects'}>
+          projects
+        </NavLink>
+        <NavLink to="/about" active={location.pathname === '/about'}>
+          about
+        </NavLink>
+        <NavLink to="/contact" active={location.pathname === '/contact'}>
+          contact
+        </NavLink>
+      </NavItems>
+    </Nav>
+  );
 };
 
 export default Navbar;

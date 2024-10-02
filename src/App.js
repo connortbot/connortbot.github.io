@@ -1,7 +1,11 @@
 // src/App.js
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Projects from './components/Projects';
 import Footer from './components/Footer';
 import styled from 'styled-components';
 
@@ -16,15 +20,39 @@ const AppContainer = styled.div`
   position: relative; /* To position Footer correctly */
 `;
 
+const ContentWrapper = styled.div`
+  flex: 1; /* Takes up remaining space to push footer to the bottom */
+  width: 100%;
+  margin: 0 auto; /* Center the container */
+`;
+
+const AnimatedRoutes = () => {
+	const location = useLocation();
+
+	return (
+	<AnimatePresence mode="wait">
+		<Routes location={location} key={location.pathname}>
+		<Route path="/" element={<Home />} />
+		<Route path="/projects" element={<Projects />} />
+		{/* Add other routes here */}
+		</Routes>
+	</AnimatePresence>
+	);
+};
+
 function App() {
 	return (
 		<>
-		<GlobalStyles />
-		<AppContainer>
-			<Navbar />
-			<Home />
-			<Footer />
-		</AppContainer>
+			<GlobalStyles />
+			<Router>
+				<AppContainer>
+					<Navbar />
+					<ContentWrapper>
+						<AnimatedRoutes />
+					</ContentWrapper>
+					<Footer />
+				</AppContainer>
+			</Router>
     	</>
 	);
 }
