@@ -81,28 +81,19 @@ const projects = [
   {
     number: '001',
     title: 'Caitlyn Raytracing Renderer',
-    description: 'An MCRT (Monte Carlo Raytracing Renderer) written from scratch in C++.',
-    tags: ['C++', 'Agile Project Management', 'Git', 'CMake', 'Docker'],
-    link: 'https://github.com/example',
+    description: 'A Reverse MCRT (Monte Carlo Raytracing Renderer) written from scratch in C++ designed for the pixellax art style.',
+    tags: ['C++', 'Computer Graphics', 'Git', 'CMake', 'Docker', 'Jira'],
+    link: 'https://github.com/cypraeno/caitlyn',
     dateRange: 'April 2023 (Ongoing)',
   },
   {
     number: '002',
-    title: 'GoGo Chess',
-    description: "GoGo Chess is a 'gacha' inspired MMORPG in Discord. It uses Discord.JS.",
-    tags: ['JavaScript', 'Git', 'Discord API', 'SQL', 'MySQL', 'Node.js', 'Game Development'],
+    title: 'Solomonoff Inference Engine',
+    description: "A local inference engine for Llama and Cohere models.",
+    tags: ['Computer Graphics', 'Research'],
     link: 'https://github.com/example',
-    dateRange: 'Nov 2022 - Jun 2023',
-  },
-  {
-    number: '002',
-    title: 'GoGo Chess',
-    description: "GoGo Chess is a 'gacha' inspired MMORPG in Discord. It uses Discord.JS.",
-    tags: ['JavaScript', 'Git', 'Discord API', 'SQL', 'MySQL', 'Node.js', 'Game Development'],
-    link: 'https://github.com/example',
-    dateRange: 'Nov 2022 - Jun 2023',
-  },
-  // Add more projects here
+    dateRange: 'September 2024 (Ongoing)',
+  }
 ];
 
 const pageVariants = {
@@ -137,9 +128,11 @@ const Projects = () => {
               <Tag key={tag}>{tag}</Tag>
             ))}
           </TagContainer>
-          <ProjectLink href={project.link} target="_blank">
-            View project via Github
-          </ProjectLink>
+          {project.link && (
+            <ProjectLink href={project.link} target="_blank" rel="noopener noreferrer">
+              View project via Github
+            </ProjectLink>
+          )}
           <ProjectDetails>{project.dateRange}</ProjectDetails>
         </ProjectCard>
       ))}
