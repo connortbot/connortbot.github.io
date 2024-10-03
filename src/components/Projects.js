@@ -91,7 +91,7 @@ const projects = [
     title: 'Solomonoff Inference Engine',
     description: "A local inference engine for Llama and Cohere models.",
     tags: ['Computer Graphics', 'Research'],
-    link: 'https://github.com/example',
+    link: 'https://github.com/connortbot/solomonoff',
     dateRange: 'September 2024 (Ongoing)',
   }
 ];

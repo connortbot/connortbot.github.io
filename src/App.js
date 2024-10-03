@@ -44,7 +44,7 @@ function App() {
 	return (
 		<>
 			<GlobalStyles />
-			<Router>
+			<Router basename="/personal">
 				<AppContainer>
 					<Navbar />
 					<ContentWrapper>
