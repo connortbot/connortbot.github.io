@@ -82,7 +82,7 @@ const projects = [
     number: '001',
     title: 'Caitlyn Raytracing Renderer',
     description: 'A Reverse MCRT (Monte Carlo Raytracing Renderer) written from scratch in C++ designed for the pixellax art style.',
-    tags: ['C++', 'Computer Graphics', 'Git', 'CMake', 'Docker', 'Jira'],
+    tags: ['C++', 'CMake', 'Docker', 'Jira', 'Monte Carlo Raytracing', 'Intel Embree', 'Computer Graphics', 'Git'],
     link: 'https://github.com/cypraeno/caitlyn',
     dateRange: 'April 2023 (Ongoing)',
   },
@@ -90,10 +90,26 @@ const projects = [
     number: '002',
     title: 'Solomonoff Inference Engine',
     description: "A local inference engine for Llama and Cohere models.",
-    tags: ['Computer Graphics', 'Research'],
+    tags: ['PyTorch', 'Transformers', 'LLMs', 'LLM Inference', 'Llama', 'Cohere', 'Multi-Head Attention', 'RoPE', 'KVCache'],
     link: 'https://github.com/connortbot/solomonoff',
     dateRange: 'September 2024 (Ongoing)',
-  }
+  },
+  {
+    number: '003',
+    title: 'Podcast Diarization Pipeline',
+    description: "Semi-supervised ML Audio Diarization Pipeline",
+    tags: ['Python', 'Audio Machine Learning', 'Diarization', 'Whisper', 'pyannote', 'Semi-Supervised Learning', 'Clustering'],
+    link: 'https://github.com/connortbot/podcast-diarizer',
+    dateRange: 'September 2024 (Ongoing)',
+  },
+  {
+    number: '004',
+    title: 'QuickSurf Research Paper',
+    description: "Rendering Optimization Paper & Model",
+    tags: ['Rendering Optimization', 'LUTs', 'Principled BSDFs', 'Monte Carlo Raytracing', 'Research Paper'],
+    link: '',
+    dateRange: 'September 2024 (Ongoing)',
+  },
 ];
 
 const pageVariants = {
