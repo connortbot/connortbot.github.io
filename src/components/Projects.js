@@ -104,6 +104,14 @@ const projects = [
   },
   {
     number: '004',
+    title: 'Squeak',
+    description: "Language learning app for easy comprehensive input with Cohere's Aya 35B.",
+    tags: ['Javascript', 'React', 'Tauri', 'Cohere', 'Google Cloud Platform'],
+    link: 'https://github.com/connortbot/squeak',
+    dateRange: 'October 2024 (Ongoing)',
+  },
+  {
+    number: '005',
     title: 'QuickSurf Research Paper',
     description: "Rendering Optimization Paper & Model",
     tags: ['Rendering Optimization', 'LUTs', 'Principled BSDFs', 'Monte Carlo Raytracing', 'Research Paper'],
