@@ -51,7 +51,7 @@ function App() {
 						<AnimatedRoutes />
 					</ContentWrapper>
 					<Footer
-						resumeLink="https://drive.google.com/file/d/1RcwzgnAq7ByHN0qFO_cmhUyp2CEjzSXZ/view?usp=sharing"
+						resumeLink="https://drive.google.com/file/d/10W4_HQXs0Mgq_Q35d9SWcZft1G4_OHeQ/view?usp=sharing"
 						githubLink="https://github.com/connortbot"
 						linkedinLink="https://www.linkedin.com/in/connor-loi/"
 					/>
