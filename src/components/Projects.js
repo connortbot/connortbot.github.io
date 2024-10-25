@@ -88,6 +88,15 @@ const projects = [
   },
   {
     number: '002',
+    title: 'LiveStory (CalHacks 11.0 Winner: Best Use of Vapi)',
+    description: 'A interactable storybook with AI-powered characters. (Talk to the Big Bad Wolf!)',
+    tags: ['Python', 'React', 'Vapi AI', 'Reflex', 'Lottie', '11Labs', 'Groq', 'Deepgram'],
+    link: 'https://devpost.com/software/livestory',
+    dateRange: 'October 2024',
+    platform: 'DevPost'
+  },
+  {
+    number: '003',
     title: 'Solomonoff Inference Engine',
     description: "A local inference engine for Llama and Cohere models.",
     tags: ['PyTorch', 'Transformers', 'LLMs', 'LLM Inference', 'Llama', 'Cohere', 'Multi-Head Attention', 'RoPE', 'KVCache'],
@@ -95,7 +104,7 @@ const projects = [
     dateRange: 'September 2024 (Ongoing)',
   },
   {
-    number: '003',
+    number: '004',
     title: 'Podcast Diarization Pipeline',
     description: "Semi-supervised ML Audio Diarization Pipeline",
     tags: ['Python', 'Audio Machine Learning', 'Diarization', 'Whisper', 'pyannote', 'Semi-Supervised Learning', 'Clustering'],
@@ -103,7 +112,7 @@ const projects = [
     dateRange: 'September 2024 (Ongoing)',
   },
   {
-    number: '004',
+    number: '005',
     title: 'Squeak',
     description: "Language learning app for easy comprehensive input with Cohere's Aya 35B.",
     tags: ['Javascript', 'React', 'Tauri', 'Cohere', 'Google Cloud Platform'],
@@ -111,7 +120,7 @@ const projects = [
     dateRange: 'October 2024 (Ongoing)',
   },
   {
-    number: '005',
+    number: '006',
     title: 'QuickSurf Research Paper',
     description: "Rendering Optimization Paper & Model",
     tags: ['Rendering Optimization', 'LUTs', 'Principled BSDFs', 'Monte Carlo Raytracing', 'Research Paper'],
@@ -154,7 +163,7 @@ const Projects = () => {
           </TagContainer>
           {project.link && (
             <ProjectLink href={project.link} target="_blank" rel="noopener noreferrer">
-              View project via Github
+              View project on {project.platform || "GitHub"}
             </ProjectLink>
           )}
           <ProjectDetails>{project.dateRange}</ProjectDetails>
