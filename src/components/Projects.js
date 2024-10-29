@@ -96,7 +96,15 @@ const projects = [
     platform: 'DevPost'
   },
   {
-    number: '003',
+    number: '035',
+    title: 'Squeak',
+    description: "Language learning app with a new story generated each day and easy, clickable, word/sentence definitions.",
+    tags: ['Go', 'Javascript', 'Terraform', 'AWS', 'React', 'Cohere', 'GCP'],
+    link: 'https://github.com/connortbot/squeak',
+    dateRange: 'October 2024 (Ongoing)',
+  },
+  {
+    number: '004',
     title: 'Solomonoff Inference Engine',
     description: "A local inference engine for Llama and Cohere models.",
     tags: ['PyTorch', 'Transformers', 'LLMs', 'LLM Inference', 'Llama', 'Cohere', 'Multi-Head Attention', 'RoPE', 'KVCache'],
@@ -104,20 +112,12 @@ const projects = [
     dateRange: 'September 2024 (Ongoing)',
   },
   {
-    number: '004',
+    number: '005',
     title: 'Podcast Diarization Pipeline',
     description: "Semi-supervised ML Audio Diarization Pipeline",
     tags: ['Python', 'Audio Machine Learning', 'Diarization', 'Whisper', 'pyannote', 'Semi-Supervised Learning', 'Clustering'],
     link: 'https://github.com/connortbot/podcast-diarizer',
     dateRange: 'September 2024 (Ongoing)',
-  },
-  {
-    number: '005',
-    title: 'Squeak',
-    description: "Language learning app for easy comprehensive input with Cohere's Aya 35B.",
-    tags: ['Javascript', 'React', 'Tauri', 'Cohere', 'Google Cloud Platform'],
-    link: 'https://github.com/connortbot/squeak',
-    dateRange: 'October 2024 (Ongoing)',
   },
   {
     number: '006',
