@@ -19,11 +19,15 @@ const ProjectCard = styled.div`
 `;
 
 // Title of the project
-const ProjectTitle = styled.h2`
+const ProjectTitle = styled.a`
   font-size: 24px;
   font-weight: 700;
   color: #377047;
+  text-decoration: none;
   margin-bottom: 8px;
+  &:hover {
+    color: #24b34c;
+  }
 `;
 
 // Description of the project
@@ -154,7 +158,11 @@ const Projects = () => {
       {projects.map((project) => (
         <ProjectCard key={project.number}>
           <ProjectNumber>{project.number}</ProjectNumber>
-          <ProjectTitle>{project.title}</ProjectTitle>
+          
+          <ProjectTitle href={project.link} target="_blank" rel="noopener noreferrer">
+            {project.title}
+          </ProjectTitle>
+          
           <ProjectDescription>{project.description}</ProjectDescription>
           <TagContainer>
             {project.tags.map((tag) => (
