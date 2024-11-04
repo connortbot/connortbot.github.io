@@ -117,10 +117,13 @@ const Home = () => {
           {'\u{1F4BE}'} seeking 2025 internships at places i'll love, such as companies driven by film arts, machine learning, or something <WeakHighlight>interesting and meaningful.</WeakHighlight>
         </Description>
         <Description>
+          {'\u{1F4BB}'} curr. swe <Highlight> @ td bank</Highlight>
+        </Description>
+        <Description>
           {'\u{1F4BC}'} prev. senior data <Highlight>@ cohere</Highlight>
         </Description>
         <Description>
-          {'\u{1F4D6}'} currently studying computer science {'\u{2795}'} business @ waterloo/laurier
+          {'\u{1F4D6}'} currently studying computer science {'\u{2795}'} business @ uwaterloo/laurier
         </Description>
       </LeftColumn>
       <RightColumn>
