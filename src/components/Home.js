@@ -125,6 +125,11 @@ const Home = () => {
       </LeftColumn>
       <RightColumn>
         <ExperienceItem
+          title="Software Engineer Intern"
+          company="TD Bank"
+          description="Innovation Lab"
+        />
+        <ExperienceItem
           title="Software Engineer Intern (Senior Data Specialist)"
           company="Cohere AI"
           description="Retrieval Augmented Generation (RAG) for Command-R+"
