@@ -102,7 +102,7 @@ const projects = [
   {
     number: '035',
     title: 'Squeak',
-    description: "Language learning app with a new story generated each day and easy, clickable, word/sentence definitions.",
+    description: "Language learning through stories you love.",
     tags: ['Go', 'Javascript', 'Terraform', 'AWS', 'React', 'Cohere', 'GCP'],
     link: 'https://github.com/connortbot/squeak',
     dateRange: 'October 2024 (Ongoing)',
