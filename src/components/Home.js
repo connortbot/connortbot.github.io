@@ -114,7 +114,7 @@ const Home = () => {
       <LeftColumn>
         <Greeting>hi, i'm connor {'\u{1F631}'}</Greeting>
         <Description>
-          {'\u{1F4BE}'} seeking 2025 internships at places i'll love, such as companies driven by film arts, machine learning, or something <WeakHighlight>interesting and meaningful.</WeakHighlight>
+          {'\u{1F4BE}'} seeking summer 2025 internships at startups driven by film arts, machine learning, or involving <WeakHighlight>scaling cloud infrastructure for cloud.</WeakHighlight>
         </Description>
         <Description>
           {'\u{1F4BB}'} curr. swe <Highlight> @ td bank</Highlight>
@@ -131,6 +131,11 @@ const Home = () => {
           title="Software Engineer Intern"
           company="TD Bank"
           description="Innovation Lab"
+        />
+        <ExperienceItem
+          title="Co-Founder, Software Engineer"
+          company="Squeak"
+          description="Language learning through stories you love"
         />
         <ExperienceItem
           title="Software Engineer Intern (Senior Data Specialist)"
