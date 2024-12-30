@@ -114,7 +114,7 @@ const Home = () => {
       <LeftColumn>
         <Greeting>hi, i'm connor {'\u{1F631}'}</Greeting>
         <Description>
-          {'\u{1F4BE}'} seeking summer 2025 internships at startups driven by film arts, machine learning, or involving <WeakHighlight>scaling cloud infrastructure for cloud.</WeakHighlight>
+          {'\u{1F4BE}'} seeking summer 2025 internships at startups driven by film arts, machine learning, or involving <WeakHighlight>scaling cloud infrastructure.</WeakHighlight>
         </Description>
         <Description>
           {'\u{1F4BB}'} curr. swe <Highlight> @ td bank</Highlight>
