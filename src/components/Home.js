@@ -114,7 +114,7 @@ const Home = () => {
       <LeftColumn>
         <Greeting>hi, i'm connor {'\u{1F631}'}</Greeting>
         <Description>
-          {'\u{1F4BE}'} seeking summer 2025 internships at startups driven by film arts, machine learning, or involving <WeakHighlight>scaling cloud infrastructure.</WeakHighlight>
+          {'\u{1F4BE}'} building <WeakHighlight as="a" href="https://squeak.today" style={{ textDecoration: 'underline' }}>Squeak</WeakHighlight>. joining helicone (YC W23) for S25.
         </Description>
         <Description>
           {'\u{1F4BB}'} curr. swe <Highlight> @ td bank</Highlight>
@@ -130,22 +130,22 @@ const Home = () => {
         <ExperienceItem
           title="Software Engineer Intern"
           company="TD Bank"
-          description="Innovation Lab"
+          description="Agentic Voice AI in the Innovation Lab"
         />
         <ExperienceItem
-          title="Co-Founder, Software Engineer"
+          title="Product Team"
           company="Squeak"
-          description="Language learning through stories you love"
+          description="Language learning made for teachers and students who love to read."
         />
         <ExperienceItem
-          title="Software Engineer Intern (Senior Data Specialist)"
+          title="Senior Data Specialist"
           company="Cohere AI"
           description="Retrieval Augmented Generation (RAG) for Command-R+"
         />
         <ExperienceItem
           title="Software Engineer Intern"
           company="Markland Wood Golf Club"
-          description="Cloud User Data Automation"
+          description="Automation for User Data on Cloud"
         />
       </RightColumn>
     </HomeContainer>
