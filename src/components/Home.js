@@ -114,26 +114,28 @@ const Home = () => {
       <LeftColumn>
         <Greeting>hi, i'm connor {'\u{1F631}'}</Greeting>
         <Description>
-          {'\u{1F4BE}'} building <WeakHighlight as="a" href="https://squeak.today" style={{ textDecoration: 'underline' }}>Squeak</WeakHighlight>. joining helicone (YC W23) for S25.
+          {'\u{1F4BE}'} swe @ <WeakHighlight as="a" href="https://helicone.ai" style={{ textDecoration: 'underline' }}>helicone (yc w23)</WeakHighlight> 
         </Description>
         <Description>
-          {'\u{1F4BB}'} curr. swe <Highlight> @ td bank</Highlight>
+          {'\u{1F4BC}'} prev. <Highlight>@ cohere, td bank</Highlight>
         </Description>
         <Description>
-          {'\u{1F4BC}'} prev. senior data <Highlight>@ cohere</Highlight>
-        </Description>
-        <Description>
-          {'\u{1F4D6}'} currently studying computer science {'\u{2795}'} business @ uwaterloo/laurier
+          {'\u{1F4D6}'} currently studying computer science @ uwaterloo
         </Description>
       </LeftColumn>
       <RightColumn>
+        <ExperienceItem
+          title="Software Engineer Intern"
+          company="Helicone (YC W23)"
+          description="Core product - LLM routing and observability w/ Clickhouse."
+        />
         <ExperienceItem
           title="Software Engineer Intern"
           company="TD Bank"
           description="Agentic Voice AI in the Innovation Lab"
         />
         <ExperienceItem
-          title="Product Team"
+          title="Software Engineer"
           company="Squeak"
           description="Language learning made for teachers and students who love to read."
         />
@@ -143,7 +145,7 @@ const Home = () => {
           description="Retrieval Augmented Generation (RAG) for Command-R+"
         />
         <ExperienceItem
-          title="Software Engineer Intern"
+          title="Software Engineer"
           company="Markland Wood Golf Club"
           description="Automation for User Data on Cloud"
         />

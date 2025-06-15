@@ -83,15 +83,20 @@ const ProjectNumber = styled.div`
 
 const projects = [
   {
-    number: '001',
     title: 'Squeak',
     description: "Language learning made for teachers and students who love to read.",
-    tags: ['Go', 'Javascript', 'Terraform', 'AWS', 'React', 'Cohere', 'GCP'],
+    tags: ['Go', 'Typescript', 'Terraform', 'AWS', 'React', 'Gemini', 'GCP'],
     link: 'https://github.com/connortbot/squeak',
-    dateRange: 'October 2024 (Ongoing)',
+    dateRange: 'October 2024 - April 2025',
   },
   {
-    number: '002',
+    title: "Yappers.live",
+    description: "Social games for the dinner table, no apps needed! Play at yappers.live.",
+    tags: ['Rust', 'Typescript', 'Valkey', 'Render'],
+    link: 'https://github.com/connortbot/yappers.live',
+    dateRange: 'June 2025'
+  },
+  {
     title: 'Caitlyn Raytracing Renderer',
     description: 'A Reverse MCRT (Monte Carlo Raytracing Renderer) written from scratch in C++ designed for the pixellax art style.',
     tags: ['C++', 'CMake', 'Docker', 'Jira', 'Monte Carlo Raytracing', 'Intel Embree', 'Computer Graphics', 'Git'],
@@ -99,7 +104,6 @@ const projects = [
     dateRange: 'April 2023 - November 2024',
   },
   {
-    number: '003',
     title: 'LiveStory (CalHacks 11.0 Winner: Best Use of Vapi)',
     description: 'A interactable storybook with AI-powered characters. (Talk to the Big Bad Wolf!)',
     tags: ['Python', 'React', 'Vapi AI', 'Reflex', 'Lottie', '11Labs', 'Groq', 'Deepgram'],
@@ -108,7 +112,6 @@ const projects = [
     platform: 'DevPost'
   },
   {
-    number: '004',
     title: 'Starbit',
     description: "A lightweight, space realtime RTS game played in the terminal using QUIC and gRPC. Written fully in Go.",
     tags: ['Go', 'gRPC', 'QUIC', 'AWS'],
@@ -116,7 +119,6 @@ const projects = [
     dateRange: 'March 2025',
   },
   {
-    number: '005',
     title: 'Solomonoff Inference Engine',
     description: "A local inference engine for Llama and Cohere models.",
     tags: ['PyTorch', 'Transformers', 'LLMs', 'LLM Inference', 'Llama', 'Cohere', 'Multi-Head Attention', 'RoPE', 'KVCache'],
@@ -124,7 +126,6 @@ const projects = [
     dateRange: 'September 2025',
   },
   {
-    number: '006',
     title: 'Podcast Diarization Pipeline',
     description: "Semi-supervised ML Audio Diarization Pipeline",
     tags: ['Python', 'Audio Machine Learning', 'Diarization', 'Whisper', 'pyannote', 'Semi-Supervised Learning', 'Clustering'],
@@ -132,7 +133,6 @@ const projects = [
     dateRange: 'September 2024',
   },
   {
-    number: '007',
     title: 'QuickSurf Research Paper',
     description: "Rendering Optimization Paper & Model",
     tags: ['Rendering Optimization', 'LUTs', 'Principled BSDFs', 'Monte Carlo Raytracing', 'Research Paper'],
@@ -163,9 +163,9 @@ const Projects = () => {
       exit="exit"
       variants={pageVariants}
     >
-      {projects.map((project) => (
-        <ProjectCard key={project.number}>
-          <ProjectNumber>{project.number}</ProjectNumber>
+      {projects.map((project, i) => (
+        <ProjectCard key={`${i+1}`}>
+          <ProjectNumber>{`00${i+1}`}</ProjectNumber>
           
           <ProjectTitle href={project.link} target="_blank" rel="noopener noreferrer">
             {project.title}
