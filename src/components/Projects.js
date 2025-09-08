@@ -12,10 +12,9 @@ const ProjectsContainer = styled(motion.div)`
 const ProjectCard = styled.div`
   background: #FAFFFB; /* Background color of the project card */
   border: 1px solid #E0E0E0;
-  border-radius: 12px;
+  border-radius: 4px;
   padding: 24px;
   margin-bottom: 32px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
 // Title of the project
@@ -85,7 +84,7 @@ const projects = [
   {
     title: 'Squeak',
     description: "Language learning made for teachers and students who love to read.",
-    tags: ['Go', 'Typescript', 'Terraform', 'AWS', 'React', 'Gemini', 'GCP'],
+    tags: ['Go', 'Typescript', 'Terraform', 'AWS', 'React', 'GCP'],
     link: 'https://github.com/connortbot/squeak',
     dateRange: 'October 2024 - April 2025',
   },
@@ -99,7 +98,7 @@ const projects = [
   {
     title: 'Caitlyn Raytracing Renderer',
     description: 'A Reverse MCRT (Monte Carlo Raytracing Renderer) written from scratch in C++ designed for the pixellax art style.',
-    tags: ['C++', 'CMake', 'Docker', 'Jira', 'Monte Carlo Raytracing', 'Intel Embree', 'Computer Graphics', 'Git'],
+    tags: ['C++', 'CMake', 'Docker', 'Monte Carlo Raytracing', 'Intel Embree', 'Computer Graphics'],
     link: 'https://github.com/cypraeno/caitlyn',
     dateRange: 'April 2023 - November 2024',
   },
@@ -117,27 +116,6 @@ const projects = [
     tags: ['Go', 'gRPC', 'QUIC', 'AWS'],
     link: 'https://github.com/connortbot/starbit',
     dateRange: 'March 2025',
-  },
-  {
-    title: 'Solomonoff Inference Engine',
-    description: "A local inference engine for Llama and Cohere models.",
-    tags: ['PyTorch', 'Transformers', 'LLMs', 'LLM Inference', 'Llama', 'Cohere', 'Multi-Head Attention', 'RoPE', 'KVCache'],
-    link: 'https://github.com/connortbot/solomonoff',
-    dateRange: 'September 2025',
-  },
-  {
-    title: 'Podcast Diarization Pipeline',
-    description: "Semi-supervised ML Audio Diarization Pipeline",
-    tags: ['Python', 'Audio Machine Learning', 'Diarization', 'Whisper', 'pyannote', 'Semi-Supervised Learning', 'Clustering'],
-    link: 'https://github.com/connortbot/podcast-diarizer',
-    dateRange: 'September 2024',
-  },
-  {
-    title: 'QuickSurf Research Paper',
-    description: "Rendering Optimization Paper & Model",
-    tags: ['Rendering Optimization', 'LUTs', 'Principled BSDFs', 'Monte Carlo Raytracing', 'Research Paper'],
-    link: '',
-    dateRange: 'September 2024 (Halted)',
   },
 ];
 

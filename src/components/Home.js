@@ -120,14 +120,14 @@ const Home = () => {
           {'\u{1F4BC}'} prev. <Highlight>@ cohere, td bank</Highlight>
         </Description>
         <Description>
-          {'\u{1F4D6}'} currently studying computer science @ uwaterloo
+          {'\u{1F4D6}'} studying computer science @ uwaterloo
         </Description>
       </LeftColumn>
       <RightColumn>
         <ExperienceItem
           title="Software Engineer Intern"
           company="Helicone (YC W23)"
-          description="Core product - LLM routing and observability w/ Clickhouse."
+          description="LLM Observability - Prompts and Clickhouse"
         />
         <ExperienceItem
           title="Software Engineer Intern"
@@ -137,7 +137,7 @@ const Home = () => {
         <ExperienceItem
           title="Software Engineer"
           company="Squeak"
-          description="Language learning made for teachers and students who love to read."
+          description="Language learning made for people who love to read."
         />
         <ExperienceItem
           title="Senior Data Specialist"
@@ -147,7 +147,7 @@ const Home = () => {
         <ExperienceItem
           title="Software Engineer"
           company="Markland Wood Golf Club"
-          description="Automation for User Data on Cloud"
+          description="Automated leaderboards"
         />
       </RightColumn>
     </HomeContainer>
